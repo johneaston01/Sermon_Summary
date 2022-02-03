@@ -1,0 +1,35 @@
+.about-container {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    right: 5rem;
+    height: 100vh;
+}
+
+.about-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F0F0F0;
+    top: 5rem;
+}
+
+.about-text-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d7a6fd;
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    position: relative;
+    top: 3rem;
+    height: 15rem;
+    width: 12rem;
+    border: 1rem solid #bfb545;
+}

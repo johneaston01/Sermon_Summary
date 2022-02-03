@@ -1,16 +1,20 @@
 import React from "react";
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
 
+    const { pathname } = useLocation();
     return(
         <nav>
-            <h1><a href="#">SermonSummary</a></h1>
+            <h1><Link to="/" id="logo">Sermon Summary</Link></h1>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
+                    <div className={ pathname === "/" ? "line" : "" } />
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <Link to="/about">About</Link>
+                    <div className={ pathname === "/about" ? "line" : "" } />
                 </li>
             </ul>
         </nav>
