@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const loadTestApiResults = () => async (dispatch) => {
-    const testUrl = "http://universities.hipolabs.com/search?country=United+States";
+    const testUrl = "";
     const response = await axios.get(testUrl);
 
     dispatch({
